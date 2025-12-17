@@ -1,0 +1,5 @@
+pandas
+statsmodels
+matplotlib
+
+print("requirements.txt created successfully.")
