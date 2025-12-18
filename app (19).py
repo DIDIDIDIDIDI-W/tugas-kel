@@ -74,9 +74,9 @@ try:
             
             *   **gula pasir **: hampir sama seperti beras yang naik dikit dikit setiap tahun
             
-            *   ** daging sapi**: Garis hijau di paling atas itu ibaratnya adalah komoditas Daging Sapi. Harganya memang tinggi, tapi dia "anteng" alias stabil. tapi sekalinya naik (seperti yang terlihat di tengah grafik)
+            *   **daging sapi**: Garis hijau di paling atas itu ibaratnya adalah komoditas Daging Sapi. Harganya memang tinggi, tapi dia "anteng" alias stabil. tapi sekalinya naik (seperti yang terlihat di tengah grafik)
             
-            *   ** kesimpulan**: dari hasil pengamatan data di atas harga komonditas di indonesia makin tahun makin naik walaupun sedikit demi sedikit.            """)
+            *   **kesimpulan**:Umum Grafik Dualisme Harga: Pasar terbagi dua. Ada kelompok komoditas "Elit" (garis hijau) yang harganya tinggi tapi stabil, namun sangat bergejolak.  Terjadi pola lonjakan yang hampir selalu berulang di periode akhir tahun (Desember) dan awal tahun (Februari). Ini menandakan adanya pengaruh besar dari siklus cuaca dan hari raya keagamaan. Meskipun banyak guncangan (lonjakan tajam), harga cenderung kembali ke titik keseimbangan asalnya. Namun, secara jangka panjang, "lantai harga" (harga terendah) pelan-pelan merangkak naik akibat inflasi. .            """)
         else:
             st.warning("Silakan pilih setidaknya satu komoditas untuk menampilkan grafik.")
 
