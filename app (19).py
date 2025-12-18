@@ -3,13 +3,13 @@ import streamlit as st
 import pandas as pd
 
 # Konfigurasi halaman
-st.set_page_config(page_title="Dashboard Harga Pangan Banten", layout="wide")
+st.set_page_config(page_title="Dashboard Harga Pangan Bengkulu", layout="wide")
 
 # Judul Utama
-st.title(' Dashboard Harga Komoditas Pangan Utama di Banten')
-st.markdown("""
-Dashboard ini menyajikan analisis perkembangan harga pangan strategis di wilayah Banten.
-Data ini diambil dari laporan bulanan dan divisualisasikan untuk membantu memantau tren kenaikan atau penurunan harga.
+st.title(' Data Harga Komoditas Pangan di Provinsi Bnegkulu ')
+st.markdown("""perkembangan harga pangan strategis di wilayah Bengkulu.
+Data ini diambil dari laporan bulanan dan divisualisasikan untuk membantu memantau tren kenaikan atau penurunan harga yang terjadi Di Bengkulu dan Data Yang di ambil 
+Berupa Harga Pangan Mulai dari , Beras , Daging Ayam , Daging Sapi , Bawang Merah , Cabe Rawit , Minyak Goreng , Gula Pasir .
 """)
 
 # Load data CSV (Bukan Excel lagi)
@@ -37,8 +37,8 @@ try:
 
     # Plotting Section
     st.divider()
-    st.header(" Analisis Harga pangan dari tahun 2019- 2024 di wilayah banten")
-    st.markdown("Grafik ini menunjukkan pergerakan harga komoditas pangan dari waktu ke waktu.")
+    st.header(" Analisis Harga pangan dari tahun 2019- 2024 di wilayah Bengkulu")
+    st.markdown("Grafik ini menunjukkan harga komoditas pangan dari waktu ke waktu mulai Dari Tahun 2019-2024.")
 
     target_komoditas = ['Beras', 'Daging Ayam', 'Daging Sapi', 'Bawang Merah',
                         'Cabai Rawit', 'Minyak Goreng', 'Gula Pasir']
@@ -57,18 +57,25 @@ try:
             # Native Streamlit Chart
             chart_data = df.set_index('tahun_date')[selected_commodities]
             
-            st.subheader("Dinamika Harga Komoditas Pangan")
+            st.subheader("Harga Komoditas Pangan di Bengkulu ")
             st.line_chart(chart_data)
 
             st.info("""
             ** penjelasan:**
             *   **Beras**: dari tahun 2019 samapai 2022 harganya stabil dan aman aman aja tapi ketika memasuki  tahun 2023 sampai 2024 harganya naik bisa di liaht dari garisnya yang naik tandanya harga udah makin mahal entah kenapa dah  .
-            *   **Cabai Rawit**: Sering mengalami volatilitas tinggi, biasanya dipengaruhi oleh faktor cuaca dan musim panen karena itu harganya bisa mahal murah dan kadang bisa naik dalam waktu seminggu hingga bulan bahkan hari tergantung cuaca aja .
-            *   **Daging Ayam**: garisnya tetep di tengah kadang naik kadang turun tapi masih bisa di bilang cukup stabil.
+            
+            *   **Cabai Rawit**: Garis ini paling banyak membentuk pola gunung atau puncak yang tajam dan tidak stabil (volatile). Ini ciri khas Cabai Rawit atau Cabai Merah. Harganya sangat bergantung pada cuaca. Kalau hujan terus dan petani gagal panen, harganya langsung "terbang" ke atas. Tapi begitu panen raya, harganya bisa jatuh sejatuh-jatuhnya.
+            
+            *   **Daging Ayam**: Garis ini posisinya ada di tengah-tengah, tidak terlalu bawah tapi tidak setinggi daging sapi Harganya fluktuatif mengikuti harga pakan ternak dan permintaan pasar (seperti saat hajatan atau bulan puasa), tapi pemerintah biasanya lebih cepat turun tangan kalau garis ini mulai naik terlalu tinggi..
+            
             *   **Minyak Goreng**:harganya cenderung setabil di dari tahun ke tahun tapi ada garis yang naiik di tahun 2022 penyebabnya paska covid 19.
-            *   **bawang merah**: sama kayak cabe kadang harga naik dan kadang turun tergantung cuaca dan musim aja
+            
+            *   **bawang merah**: Garis ini seringkali naik mengikuti pergerakan garis merah muda, tapi tidak setinggi itu. Lincah dan fluktuatif, tapi masih di level harga menengah. Bisa jadi ini adalah kelompok Bawang Merah atau Bawang Putih. Mereka punya pola musiman yang mirip dengan cabai, sering naik barengan terutama menjelang hari raya atau saat distribusi lagi terganggu.
+            
             *   **gula pasir **: hampir sama seperti beras yang naik dikit dikit setiap tahun
-            *   ** daging sapi**: dari grafik dan harganya yang tinggi daging sapi jadi komonditas yang sulit turun mungkin karena permintaan yang makin tinggi dan di 2022 pasca covid harganya naik dersatis dan turun di tahun selanjutnya tapi tetep naik
+            
+            *   ** daging sapi**: Garis hijau di paling atas itu ibaratnya adalah komoditas Daging Sapi. Harganya memang tinggi, tapi dia "anteng" alias stabil. tapi sekalinya naik (seperti yang terlihat di tengah grafik)
+            
             *   ** kesimpulan**: dari hasil pengamatan data di atas harga komonditas di indonesia makin tahun makin naik walaupun sedikit demi sedikit.            """)
         else:
             st.warning("Silakan pilih setidaknya satu komoditas untuk menampilkan grafik.")
