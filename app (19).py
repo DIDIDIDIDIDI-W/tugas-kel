@@ -76,7 +76,7 @@ try:
             
             *   **bawang merah**: Garis ini seringkali naik mengikuti pergerakan garis merah muda, tapi tidak setinggi itu. Lincah dan fluktuatif, tapi masih di level harga menengah. Bisa jadi ini adalah kelompok Bawang Merah atau Bawang Putih. Mereka punya pola musiman yang mirip dengan cabai, sering naik barengan terutama menjelang hari raya atau saat distribusi lagi terganggu.
             
-            *   **gula pasir **: hampir sama seperti beras yang naik dikit dikit setiap tahun
+            *   **gula pasir**: hampir sama seperti beras yang naik dikit dikit setiap tahun
             
             *   **daging sapi**: Garis hijau di paling atas itu ibaratnya adalah komoditas Daging Sapi. Harganya memang tinggi, tapi dia "anteng" alias stabil. tapi sekalinya naik (seperti yang terlihat di tengah grafik)
             
