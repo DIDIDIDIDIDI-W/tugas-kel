@@ -6,7 +6,7 @@ import pandas as pd
 st.set_page_config(page_title="Dashboard Harga Pangan Bengkulu", layout="wide")
 
 # Judul Utama
-st.title(' Data Harga Komoditas Pangan di Provinsi Bnegkulu ')
+st.title(' Data Harga Komoditas Pangan di Provinsi Bengkulu ')
 st.markdown("""perkembangan harga pangan strategis di wilayah Bengkulu.
 Data ini diambil dari laporan bulanan dan divisualisasikan untuk membantu memantau tren kenaikan atau penurunan harga yang terjadi Di Bengkulu dan Data Yang di ambil 
 Berupa Harga Pangan Mulai dari , Beras , Daging Ayam , Daging Sapi , Bawang Merah , Cabe Rawit , Minyak Goreng , Gula Pasir .
